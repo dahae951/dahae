@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - Active Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="./img/favicon.png" rel="icon">
+  <link href="./img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css" rel="stylesheet">
+
+
+  <!-- Vendor CSS Files -->
+  <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="./vendor/aos/aos.css" rel="stylesheet">
+  <link href="./vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="./vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="./css/main.css" rel="stylesheet">
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="./img/logo.png" alt=""> -->
+        <h1 class="sitename">DH</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">How Am I</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- About Section 메인 배너 -->
+    <section id="about" class="about">
+
+      <div>
+        <div class="row align-items-center justify-content-between">
+          <!----- 메인 이미지 ----->
+          <div class="col-lg-12 mb-5 mb-lg-0 order-lg-2 main-bn-slide" data-aos="fade-up" data-aos-delay="400">
+            <div class="swiper init-swiper">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "allowTouchMove": false,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": 1,
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  },
+                  "breakpoints": {
+                    "320": {
+                      "slidesPerView": 1,
+                      "spaceBetween": 40
+                    },
+                    "1200": {
+                      "slidesPerView": 1,
+                      "spaceBetween": 1
+                    }
+                  }
+                }
+              </script>
+
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./img/img_h_6.jpg" alt="Image" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/img_h_7.jpg" alt="Image" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/img_h_8.jpg" alt="Image" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!----- 메인 텍스트 ----->
+          <div class="main-bn-text dark-background">
+            <p class="mb-4 main-bn-t-title" data-aos="fade-up">
+              Wed Design Portfolio
+            </p>
+            <p data-aos="fade-up">
+              새로운 도전에 두려워하지 않는 웹디자이너, 제다해입니다.
+            </p>
+          </div>
+          
+        </div>
+      </div>
+    </section><!-- /About Section -->
+
+    <!-- Services Section 내 키워드 -->
+    <section id="services" class="services section light-background">
+
+      <div class="container">
+        <div class="row gy-4 justify-content-center">
+
+          <div class="col-lg-3">
+            <div class="services-item" data-aos="fade-up">
+              <div class="services-icon">
+                <i class="bi bi-bullseye"></i>
+              </div>
+              <div>
+                <h3>Challenging(도전적인)</h3>
+                <p>도전하는 것을 두려워하지 않으며 다양한 공모전과 프로젝트에 참여하면서 도전정신을 배웠습니다.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="services-item" data-aos="fade-up" data-aos-delay="100">
+              <div class="services-icon">
+                <i class="bi bi-bar-chart"></i>
+              </div>
+              <div>
+                <h3>planned(계획적인)</h3>
+                <p>작업하기 전 기획과 레퍼런스를 꼼꼼히 찾아두는 습관으로, 작업 중 에러사항이 생기는 것을 최소화합니다.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="services-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="services-icon">
+                <i class="bi bi-command"></i>
+              </div>
+              <div>
+                <h3>groundbreaking(획기적인)</h3>
+                <p>새로운 디자인이나 프로그램 등에 관심이 많아 최신 트렌드에 맞는 작업물을 제작하는데 특화되어 있습니다.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- /Services Section -->
+
+    <!-- Tabs Section 작업물 종류 -->
+    <section id="tabs" class="tabs section">
+
+      <div class="container">
+        <div class="row gap-x-lg-4 justify-content-between">
+          <div class="col-lg-4 js-custom-dots">
+            <a href="#" class="service-item link horizontal d-flex active" data-aos="fade-left" data-aos-delay="0">
+              <div class="service-icon color-1 mb-4">
+                <i class="bi bi-alarm"></i>
+              </div>
+              <!-- /.icon -->
+              <div class="service-contents">
+                <h3>Wed Design</h3>
+                <p>
+                  반응형 웹과 어플 디자인
+                </p>
+              </div>
+              <!-- /.service-contents-->
+            </a>
+            <!-- /.service -->
+
+            <a href="#" class="service-item link horizontal d-flex" data-aos="fade-left" data-aos-delay="100">
+              <div class="service-icon color-2 mb-4">
+                <i class="bi bi-bag-check"></i>
+              </div>
+              <!-- /.icon -->
+              <div class="service-contents">
+                <h3>Character</h3>
+                <p>
+                  다양한 스타일의 캐릭터 디자인
+                </p>
+              </div>
+              <!-- /.service-contents-->
+            </a>
+            <!-- /.service -->
+
+            <a href="#" class="service-item link horizontal d-flex" data-aos="fade-left" data-aos-delay="200">
+              <div class="service-icon color-3 mb-4">
+                <i class="bi bi-briefcase"></i>
+              </div>
+              <!-- /.icon -->
+              <div class="service-contents">
+                <h3>Graphics Design</h3>
+                <p>
+                  로고, 카드뉴스, 패키지 등 다양한 종류의 디자인
+                </p>
+              </div>
+              <!-- /.service-contents-->
+            </a>
+            <!-- /.service -->
+
+            <a href="#" class="service-item link horizontal d-flex" data-aos="fade-left" data-aos-delay="300">
+              <div class="service-icon color-4 mb-4">
+                <i class="bi bi-easel"></i>
+              </div>
+              <!-- /.icon -->
+              <div class="service-contents">
+                <h3>Video</h3>
+                <p>
+                  직접 제작한 영상 작업물
+                </p>
+              </div>
+              <!-- /.service-contents-->
+            </a>
+            <!-- /.service -->
+          </div>
+
+          <div class="col-lg-8">
+            <div class="swiper init-swiper-tabs">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoHeight": true,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  },
+                  "breakpoints": {
+                    "320": {
+                      "slidesPerView": 1,
+                      "spaceBetween": 40
+                    },
+                    "1200": {
+                      "slidesPerView": 1,
+                      "spaceBetween": 1
+                    }
+                  }
+                }
+              </script>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="assets/img/img_h_1.jpg" alt="Image" class="img-fluid">
+                  <div class="p-4">
+                    <h3 class="text-black h5 mb-3">Modern and clean design</h3>
+                    <div class="row">
+                      <div class="col-lg-8">
+                        <p>
+                          Far far away, behind the word mountains, far from the
+                          countries Vokalia and Consonantia, there live the blind
+                          texts. Separated they live in Bookmarksgrove right at the
+                          coast of the Semantics, a large language ocean.
+                        </p>
+                        <p>
+                          A small river named Duden flows by their place and
+                          supplies it with the necessary regelialia. It is a
+                          paradisematic country, in which roasted parts of sentences
+                          fly into your mouth.
+                        </p>
+                      </div>
+                      <div class="col-lg-4">
+                        <ul class="list-unstyled list-check">
+                          <li>Far far away, behind the word</li>
+                          <li>Far from the countries Vokalia</li>
+                          <li>Separated they live in Bookmarksgrove</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/img_h_2.jpg" alt="Image" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/img_h_3.jpg" alt="Image" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/img_h_4.jpg" alt="Image" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Tabs Section -->
+
+    <section id="Myinfor" class="section light-background">
+      <div class="container">
+        <div class="row">
+          간략한 내 정보 작성
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container">
+
+      <div class="copyright d-flex flex-column flex-md-row align-items-center justify-content-md-between">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Je Dahae.</strong> <span>All Rights Reserved</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./vendor/php-email-form/validate.js"></script>
+  <script src="./vendor/aos/aos.js"></script>
+  <script src="./vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="./vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="./vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="./vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="./vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- icon -->
+   <script src="https://kit.fontawesome.com/bdf0ff0fd5.js" crossorigin="anonymous"></script>
+
+  <!-- Main JS File -->
+  <script src="./js/main.js"></script>
+  
+
+</body>
+
+</html>
