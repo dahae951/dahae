@@ -6,6 +6,9 @@ main_section content *****/
 .main_sec_title{margin-bottom: 30px; font-size: 8vmin; font-family: var(--title-font);}
 .section{padding: 12vw 0;}
 
+@media (max-width: 768px) {
+  .section{padding: 100px 0;}
+}
 
 
 /*********************************************************** 
