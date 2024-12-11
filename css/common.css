@@ -42,6 +42,7 @@ common content *****/
 *{color: var(--default-color); font-family: var(--default-font); line-height: 1.2em; text-transform: uppercase;
   transition: all 0.5s;}
 
+html, body {margin: 0; padding: 0; width: 100%; overflow-x: hidden;}
 
 ul, ol{list-style-type: none;}
 
