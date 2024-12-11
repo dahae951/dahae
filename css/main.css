@@ -167,7 +167,7 @@ motion grapich content *****/
   .motion_content .motion_tab a p{padding: 20px 0;}
 
   .motion_content .motions{width: 100%; margin-top: 20px;}
-  .motion_content .motions .motion iframe{width: 100%; height: 45vw;}
+  .motion_content .motions .motion iframe{width: 100%; height: 51vw;}
 }
 
 @media (max-width: 768px){
