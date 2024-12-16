@@ -1,0 +1,41 @@
+
+/*********************************************************** 
+sub common content *****/
+
+/****** header ******/
+button {position: relative; display: inline-block; cursor: pointer; outline: none; border: 0; vertical-align: middle; text-decoration: none; background: transparent; padding: 0; font-size: inherit; font-family: inherit;}
+button.learn-more { width: 12rem; height: auto;}
+button.learn-more .circle {transition: all 0.45s cubic-bezier(0.65, 0, .076, 1); position: relative; display: block; margin: 0; width: 3rem; height: 3rem; background: var(--default-color); border-radius: 1.625rem;}
+button.learn-more .circle .icon {transition: all 0.45s cubic-bezier(0.65, 0, .076, 1); position: absolute; top: 0; bottom: 0; margin: auto; background: var(--background-color);}
+button.learn-more .circle .icon.arrow {transition: all 0.45s cubic-bezier(0.65, 0, .076, 1); left: 0.625rem; width: 1.125rem; height: 0.125rem; background: none;}
+button.learn-more .circle .icon.arrow::before {position: absolute; content: ''; top: -0.25rem; right: 0.0625rem; width: 0.625rem; height: 0.625rem; border-top: 0.125rem solid var(--background-color); border-right: 0.125rem solid var(--background-color); transform: rotate(45deg);}
+button.learn-more .button-text {transition: all 0.45s cubic-bezier(0.65, 0, .076, 1); position: absolute; top: 0; left: 0; right: 0; bottom: 0; padding: 0.75rem 0; margin: 0 0 0 1.85rem; color: var(--default-color); font-weight: 700; line-height: 1.6; text-align: center; text-transform: uppercase;}
+
+button.learn-more:hover .circle {width: 100%;}
+button.learn-more:hover .circle .icon.arrow {background: var(--background-color); transform: translate(1rem, 0);}
+button.learn-more:hover .button-text {color: var(--background-color);}
+
+header{border-bottom: 1px solid var(--default-color);}
+
+/****** content ******/
+.portfolio_detail{margin-top: 15vmin;}
+.portfolio_detail img{margin: 0 auto; max-width: 1920px;}
+
+/********* media 768px *************/
+@media (max-width: 768px){
+  /** haeder **/
+  button.learn-more {width: 140px; display: flex; justify-content: center; align-items: center;}
+  button.learn-more .circle {display: none;}
+  button.learn-more .button-text {padding: 5px; margin: 0; font-size: 16px; position: relative;}
+
+  button.learn-more:hover{background-color: var(--default-color);}
+  button.learn-more:hover .button-text{color: var(--background-color);}
+
+  /** content **/
+  .portfolio_detail{margin-top: 100px;}
+}
+
+
+/*********************************************************** 
+wabapp_detail content *****/
+

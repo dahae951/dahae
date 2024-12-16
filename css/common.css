@@ -1,0 +1,169 @@
+/***** Fonts *****/
+
+@font-face {src: url('../font/TmonTium.ttf') format('truetype');
+  font-family: 'TmonTium'; font-weight: normal; font-style: normal;}
+
+@font-face {src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-family: 'Pretendard-Regular'; font-weight: 400; font-style: normal;}
+
+:root {
+--default-font: "Pretendard-Regular", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+--title-font: "TmonTium",  sans-serif;
+}
+
+
+/***** color *****/
+:root {
+--background-color: #ffffff;
+--default-color: #222222;
+--gray-color: #AAAAAA;
+--main-color: #FF6145;
+--modal-default-color: #ffffff;
+
+}
+
+.black_background {
+--background-color: #222222;
+--default-color: #ffffff;
+--gray-color: #AAAAAA;
+--main-color: #FF6145;
+}
+
+
+/***** Smooth scroll *****/
+:root {
+scroll-behavior: smooth;
+}
+
+
+/*********************************************************** 
+common content *****/
+
+/* 초기화 코드 */
+*{color: var(--default-color); font-family: var(--default-font); line-height: 1.2em; text-transform: uppercase;
+transition: all 0.5s;}
+
+html, body {margin: 0; padding: 0; width: 100%; overflow-x: hidden;}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0; padding: 0; border: 0;
+	font-size: 100%; font-family: var(--default-font); color: var(--default-color);  line-height: 1.2em; vertical-align: baseline;}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse; border-spacing: 0;}
+
+a {color: var(--default-color); text-decoration: none; transition: 0.3s;}
+
+
+
+/******************** header  ********************/
+.header {position: fixed; width: 100vw; padding: 20px 0; color: var(--default-color); background-color: var(--background-color); transition: all 0.5s; z-index: 997;}
+.header .logo {line-height: 1;}
+.header .logo h1 {margin: 0; font-family: var(--title-font); font-size: 2.5vmin; color: var(--default-color);}
+
+.scrolled .header {border-bottom: 1px solid var(--default-color);}
+
+.header .navmenu ul a {font-size: 1.3rem; color: var(--default-color);}
+.header .navmenu ul a:hover{color: var(--main-color);}
+
+/* Navmenu - Desktop */
+@media (min-width: 1200px) {
+.navmenu {padding: 0;}
+.navmenu ul { margin: 0; padding: 0; display: flex; list-style: none; align-items: center;}
+.navmenu li {position: relative;}
+
+.navmenu a,
+.navmenu a:focus {padding: 18px 15px; font-size: 16px; font-weight: 400; display: flex; align-items: center; justify-content: space-between; white-space: nowrap; transition: 0.3s;}
+
+.navmenu a i,
+.navmenu a:focus i {font-size: 12px; line-height: 0; margin-left: 5px; transition: 0.3s;}
+
+.navmenu li:last-child a {padding-right: 0;}
+
+.navmenu li:hover>a,
+.navmenu .active,
+.navmenu .active:focus {color: var(--main-color);}
+
+}
+
+/* Navmenu - Mobile */
+@media (max-width: 1199px) {
+.mobile-nav-toggle {color: var(--default-color); font-size: 28px; line-height: 0; margin-right: 10px; cursor: pointer; transition: color 0.3s; }
+
+.navmenu {padding: 0; z-index: 9997;}
+.navmenu ul {display: none; list-style: none; position: absolute; width: 100vw; height: 100vh; padding: 10px 0; margin: 0; background-color: var(--background-color); overflow-y: auto; transition: 0.3s; z-index: 9998; }
+
+.navmenu a,
+.navmenu a:focus {padding: 10px 20px; font-family: var(--title-font); font-size: 6vmin !important; font-weight: 500; display: flex; align-items: flex-end; justify-content: space-between; white-space: nowrap; transition: 0.3s;}
+
+.navmenu a i,
+.navmenu a:focus i {font-size: 30px; line-height: 0; margin-left: 5px; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: 0.3s; background-color: color-mix(in srgb, var(--default-color), transparent 90%); z-index: 9999;}
+
+.navmenu a i:hover, .navmenu a:focus i:hover {background-color: var(--main-color); color: var(--gray-color);}
+
+.navmenu a:hover, .navmenu .active, .navmenu .active:focus {color: var(--background-color);}
+.navmenu .active i, .navmenu .active:focus i {background-color: var(--background-color); color: var(--gray-color); transform: rotate(180deg);}
+
+.mobile-nav-active {overflow: hidden;}
+.mobile-nav-active .mobile-nav-toggle {color: var(--default-color); position: absolute; font-size: 2.5rem; top: 15px; right: 15px; margin-right: 0; z-index: 9999;}
+.mobile-nav-active .navmenu {position: fixed; overflow: hidden; inset: 0; background: rgba(46, 46, 46, 0.5); transition: 0.3s;}
+.mobile-nav-active .navmenu>ul {display: flex; flex-direction: column; align-items: flex-end; justify-content: center;}
+.mobile-nav-active .navmenu>ul>li{margin: 20px 0;}
+
+}
+
+/******************** footer  ********************/
+.footer {padding: 60px 0; background-color: var(--background-color); color: var(--default-color);}
+.footer > div{display: flex; flex-direction: column;}
+.ft_logo p{font-family: var(--title-font); font-size: 1.5rem;}
+.ft_copyright{margin-top: 15px;}
+
+
+/******************** top_btn  ********************/
+.scroll-top{position: fixed; bottom: 5vmin; right: 5vmin; display: flex; align-items: center; justify-content: center; width: 8vmin; height: 8vmin; background-color: var(--default-color); border-radius: 100%; border: 2px solid var(--background-color); opacity: 0; visibility: hidden; transition: opacity 0.3s ease, visibility 0.3s ease; z-index: 90;}
+.scroll-top img{width: 40%;}
+
+.scroll-top.active {opacity: 1; visibility: visible;}/* active 클래스가 추가되면 보이도록 설정 */
+
+@media (max-width: 768px){
+.scroll-top{bottom: 30px; right: 30px; width: 50px; height: 50px;}
+}
+
+
+
+
+
+
+
+
+
+
